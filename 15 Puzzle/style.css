@@ -4,8 +4,6 @@
 
 }
 .box{
-    /*display: inline-block;*/
-   
     box-sizing: border-box;
 	padding-left:37px;
 	padding-top:30px;
@@ -33,24 +31,6 @@
     padding-bottom: 90%;
 
 }   
-/*---------------------- FLipper-------------------- */
- /* .flipper{
-        transition: transform 0.5s ease-in-out;
-        transform-style: preserve-3d;
-        transform: rotateY(360deg);
-}
-.flipAgain{
-         transition: transform 0.5s ease-in-out;
-        transform-style: preserve-3d;
-        transform: rotateY(0deg);
-} */
-/*
-@keyframes flip {
-    to{
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        transform: rotateY(360deg);
-    } */
 
 
 body{
@@ -70,17 +50,9 @@ body.light{
     overflow-x: hidden; 
     background-image: linear-gradient(#f8401b,#dd247777);
     color: black;
-    
-    /* -webkit-transition: opacity 1s; /* For Safari 3.0 to 6.0 */
-    /* transition: opacity 10s; For modern browsers  */
-
 }
 
-/* .box:after{
-	content: "";
-    display: inline-block;
-    padding-bottom: 10%;
-} */
+
 #puzzle{
 	
     max-width: 320px;
@@ -176,17 +148,6 @@ body.light{
 
 }
 
-/*#but{
-	position: relative;
-	margin-left:700px ;
-	margin-top:65px;
-}
-#but2{
-	position:relative;
-	margin-left:580px ;
-	margin-top:-20px;
-
-}*/
 h1{
     display: inline-block;
     margin-top: 10px;
@@ -299,10 +260,7 @@ footer.dark{
     cursor: pointer;
    /* position: absolute;*/
 }
-/*.btn2{
-	position: absolute;
-	right: 0%;
-}*/
+
 .btnpos{
 	/*margin-left: 37%;
 	margin-top: 30px;*/
@@ -311,7 +269,7 @@ footer.dark{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-/*justify-content: space-around;*/
+
 }
 .taps{
     display: inline-block;
@@ -342,8 +300,6 @@ footer.dark{
 	
 	#puzzle{
 		width: 100%;
-		/* margin: 0 auto; */
-		/* margin-top: 20px; */
     }
     .date{
     display: none;    
@@ -360,10 +316,6 @@ footer.dark{
 
 }
 	
-	/* h2{
-		margin-top: 15px;
-		margin-left: 130px;
-	} */
     footer{
         display: inline-block;
         text-align: center;
@@ -380,14 +332,3 @@ footer.dark{
         margin-top: 0.6rem;
     }
 }
-/* @media only screen and (max-width: 360px) {
-	.btnpos{
-		
-		margin-left: 0px;
-		margin-top:30px;
-	}
-	.box{
-		margin: 0px;
-			
-	}
-} */

@@ -44,16 +44,7 @@ var backForth=[-1,1];
 
 
 window.onload=function(){
-    //Flip ADD
-   
-    //  for(i=0;i<4;i++){
-    //      for(j=0;j<4;j++){
-    //     arr[i][j].classList.toggle('flipper',true);
-    //     arr[i][j].classList.toggle('flipAgain',false);
-    //         arr[i][j].classList.add('flipAgain');
-    //     }
-    // } 
-    //End       
+     
 
 let num=1;
 for(i=0;i<4;i++){
@@ -118,8 +109,7 @@ for(j=0;j<4;j++){
 
 console.log(i,j);
 if(i==4 && j==4){
-/*alert("Congratulatios. You Win.");*/
-// if(bTapCheck==0 ){
+
     if(localStorage.getItem('bestTapResult') <= 0){
         bestTap=count;
         localStorage.setItem('bestTapResult',(bestTap-1));
@@ -135,31 +125,14 @@ if(i==4 && j==4){
     else{
 
     }
-// bTapCheck=1;
 
-// }
-// else{
-// let BMove=count;
-
-// if(BMove<=bestTap){  
-// bestTap=BMove;
-// localStorage.setItem('bestTapResult',(bestTap-1));
-// // bTap.innerHTML=bestTap-1;
-// bTap.innerHTML=localStorage.getItem('bestTapResult');
-// }
-// }
 Swal.fire(
 'Congratulatios!',
 'You Won!'
 
 )
 
-/*if(flag==1){
-flag=0;
-console.log("Recursion");
-winCondition();
 
-}*/
 count=0;
 check=0;
 
@@ -167,17 +140,11 @@ check=0;
 
 }
 
-// function flipper(){
-//     this.classList.add('flipper');
-//     this.classList.reload('flipper');
-    
-// }
+
 function swapp(id){
 
 
-/*: document.querySelector('#puzzle div').classList.remove('rot');*/
-/*console.log(arr[0][0]);
-console.log(arrCopy[0][0]);*/
+
 console.log(id);
 count++;
 if(check==1){
@@ -191,24 +158,7 @@ for(j=0;j<4;j++){
 
 if(arr[i][j].id==id)
 {
-    /*Flip Part*/
-   
-
-    // if(arr[i][j].classList.toggle('flipper')){
-    //     arr[i][j].classList.toggle('flipper');  
-        
-    //     console.log( arr[i][j].classList.toggle('flipper'));
-    //     console.log('if part');
-    // }
-    //  else{
-       
-         
-    //      arr[i][j].classList.toggle('flipAgain');
-    //      console.log(arr[i][j].classList.toggle('flipper'));
-    //      console.log('else part');
-        
-    //  }
-   //FLip End 
+ 
 row=i;
 col=j;
 console.log(i+" "+j+" "+arr[i][j].innerHTML);
@@ -276,7 +226,6 @@ window.location.reload("15puzzle.html");
 
 }
 document.addEventListener('DOMContentLoaded', (event) => {
-// console.log(localStorage);
 bTap.innerHTML=localStorage.getItem('bestTapResult');
 ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
 ((localStorage.getItem('mode') || 'dark') === 'light') ? document.querySelector('body').classList.add('light') : document.querySelector('body').classList.remove('light');
@@ -291,7 +240,6 @@ bTap.innerHTML=localStorage.getItem('bestTapResult');
 ((localStorage.getItem('mode') || 'dark') === 'dark') ? moon1.innerHTML="☀️" : moon1.innerHTML="🌙";
 })
 function changeTheme(){
-/*console.log("hi");*/
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); 
 localStorage.getItem('mode') === 'dark' ?   document.querySelector('body').classList.add('dark') :  document.querySelector('body').classList.remove('dark');
 localStorage.getItem('mode') === 'light' ?   document.querySelector('body').classList.add('light') :  document.querySelector('body').classList.remove('light');
@@ -303,7 +251,6 @@ localStorage.getItem('mode') === 'light' ?   document.querySelector('h1').classL
 localStorage.getItem('mode') === 'light' ?   document.querySelector('.h1').classList.add('light') :  document.querySelector('.h1').classList.remove('light');
 localStorage.getItem('mode') === 'light' ?   document.querySelector('#bestTap').classList.add('light') :  document.querySelector('#bestTap').classList.remove('light');
 localStorage.getItem('mode') === 'light' ?   document.querySelector('#moves').classList.add('light') :  document.querySelector('#moves').classList.remove('light');
-//localStorage.getItem('mode') === 'dark' ?  document.getElementById('#moonChange').classList.add('round') : document.getElementById('#moonChange').classList.remove('round');
 localStorage.getItem('mode') === 'dark' ?  moon1.innerHTML="☀️" : moon1.innerHTML="🌙";
 
 }
