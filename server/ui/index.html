@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> 15 Puzzle</title>
+    <link rel="icon" type="image/png" href="images/logoTitle.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Fredericka+the+Great|Graduate|Varela+Round&display=swap" rel="stylesheet">
+	
+</head>
+<body style="height: 110vh !important;">
+    <div class="container">
+		<h2 class="heading">15 Puzzle</h2>
+		<p class="moon"><a id="moon1"   onclick="changeTheme()" href="#">🌙</a></p>
+		
+		<div id="puzzle" >
+			 <div id="one" class="box"  onclick="swapp(id)" style="background-color:DarkRed"></div>  
+			 <div id="two" class="box"  onclick="swapp(id)" style="background-color:DarkOrchid"></div>  
+			 <div id="three" class="box" onclick="swapp(id)" style="background-color:ForestGreen"></div>  
+			 <div id="four" class="box" onclick="swapp(id)" style="background-color:#3080DA"></div>  
+			 <div id="five" 	class="box" onclick="swapp(id)" style="background-color:Indigo"></div>  
+			 <div id="six" 	class="box" onclick="swapp(id)" style="background-color:OrangeRed"></div>  
+			 <div id="seven" class="box" onclick="swapp(id)" style="background-color:#AB4934"></div>  
+			 <div id="eight" class="box"  onclick="swapp(id)"  style="background-color:Tomato"></div>  
+			 <div id="nine" 	class="box"  onclick="swapp(id)" style="background-color:HotPink"></div>  
+			 <div id="ten" 	class="box"  onclick="swapp(id)" style="background-color:LightSalmon"></div>  
+			 <div id="eleven" class="box" onclick="swapp(id)" style="background-color:DarkKhaki"></div> 
+			 <div id="twelve" class="box" onclick="swapp(id)"   style="background-color:Teal"></div> 
+			 <div id="thirteen"	class="box" onclick="swapp(id)" style="background-color:SteelBlue"></div> 
+			 <div id="fourteen" class="box" onclick="swapp(id)" style="background-color:DarkSlateGray"></div>
+			 <div id="fifteen" class="box" onclick="swapp(id)"   style="background-color:Plum"></div> 
+			 <div id="space" class="box" onclick="swapp(id)"   style="background-color: White"></div> 
+			
+		</div>
+		<div class="btnpos">
+		 	<button  class="btn" onclick="scrambler()">Scramble</button>
+			<button   class="btn btn2" onclick="solve()">Reset Score</button>
+		</div>
+        <div class="taps">
+		    <h1>Taps:<span id="moves">0</span></h1>
+            <h1 class="h1">Best Tap:<span id="bestTap">0</span></h1>
+        </div>
+		<!-- <p>Note: After solving tap the empty box to know the result.</p> -->
+		
+	</div>
+	<footer> 
+		<p class="dev">Developed By: &nbsp;<b>Manish Kumar</b></p><br>
+	</footer>
+	<script type="text/javascript" src="./app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>   
+</body>
+</html>
