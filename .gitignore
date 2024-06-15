@@ -7,3 +7,5 @@ node_modules/
 *.bak
 *.swp
 .DS_Store
+# Local Netlify folder
+.netlify
